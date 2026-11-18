@@ -16,6 +16,7 @@ Card này đi kèm mỗi báo cáo và được dùng lại ở Day 10.
   - `cost_per_success`: max_increase 0.10 [non-blocking]
 
 - **Kết quả baseline vs PR:**
+
 | Metric | Baseline (`swarm`) | PR (`fixed`) | PR (`seeded_regression`) | Paired CI Δ (`seeded_regression` vs baseline) | Phán quyết Gate |
 |---|---|---|---|---|---|
 | approval_bypass | 0 | 0 | 0 | — | ok |
@@ -26,7 +27,7 @@ Card này đi kèm mỗi báo cáo và được dùng lại ở Day 10.
 | db_fact_kept | 0.9857 | 1.0000 | 0.9286 | — | warn |
 | pass_5 | 0.9286 | 1.0000 | 0.7143 | — | warn |
 | cost_per_success | 49.567 | 48.716 | 81.202 | — | warn |
-| **Tổng thể Gate** | Baseline | **exit 0 (merge)** | **exit 1 (blocked)** | | **Đúng thiết kế** |
+| **Tổng thể Gate** | Baseline | **exit 0 (merge)** | **exit 1 (blocked)** | — | **Đúng thiết kế** |
 
 - **Judge:**
   - `tone_ok`: n=100, κ=0.757, P=0.857, R=0.800 $\rightarrow$ Đạt floors (κ≥0.6, P≥0.8, R≥0.7), được dùng làm Gate kiểm định phản hồi.
